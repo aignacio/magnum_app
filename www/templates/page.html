@@ -1,0 +1,24 @@
+<ion-view  title="Controle do carro MAGNUM"style="text-align:center;" id="page1">
+  <ion-content padding="true" class="has-header">
+    <div class="item range">
+      <i class="icon ion-ios-bolt-outline"></i>
+      <input id="acelerador" type="range" name="acelerador" ng-model="acel" ng-change="acel_click()" min="0" max="100" value="0">
+      <i class="icon ion-flash"></i>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <button style="height:200px;" id="page-button6" class="button button-dark" style="width:100%;" on-touch="esquerda_send();" on-release="parar_esquerda()">
+          <i class="icon ion-arrow-left-b"></i>
+          Esquerda
+        </button>
+      </div>
+      <div class="col">
+        <button style="height:200px;" id="page-button5" class="button button-dark" style="width:100%;" on-touch="direita_send();" on-release="parar_direita()">
+          Direita
+          <i class="icon ion-arrow-right-b"></i>
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
